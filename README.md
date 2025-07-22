@@ -125,6 +125,19 @@ pip install torch==2.7.0 torchvision torchaudio --index-url https://download.pyt
 pip install -r requirements.txt
 ```
 
+**For Linux/Windows:** Install [PyTorch](https://pytorch.org/get-started/previous-versions/)
+
+**Manual installation (ROCM 6.3 Linux/Windows):**
+```bash
+git clone https://github.com/deepbeepmeep/Wan2GP.git
+cd Wan2GP
+conda create -n wan2gp python=3.10.9
+conda activate wan2gp
+pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 --index-url https://download.pytorch.org/whl/rocm6.3
+pip install -r requirements.txt
+```
+
+
 **Run the application:**
 ```bash
 python wgp.py  # Text-to-video (default)
